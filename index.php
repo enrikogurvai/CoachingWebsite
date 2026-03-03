@@ -5,7 +5,7 @@
     // Ak nie je nastavený page, použijeme 'home' ako defaultnú page.
 
     $page = $_GET['page'] ?? 'home';
-    print($page);
+    echo $page;
     // Header načítanie na začiatok stránky.
     include "includes/header.php";
 
