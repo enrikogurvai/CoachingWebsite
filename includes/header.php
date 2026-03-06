@@ -5,14 +5,20 @@
     <title>LoL Coaching</title>
     
     <!-- Link na hlavný CSS súbor -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <!-- Navigačné menu -->
-<nav>
-    <!-- index.php?page = "Názov stŕanky" - aby sme neobchádzali router. -->
-    <a href="index.php?page=home">Home</a>
-    <a href="index.php?page=coaching">Coaching</a>
-    <a href="index.php?page=contact">Contact</a>
+<nav class = "navbar">
+    <div class = "logo">
+        TFT Gaučing
+    </div>
+    
+    <ul class = "nav-links">
+        <li><a href="index.php?page=home">Home</a></li>
+        <li><a href="index.php?page=coaching">Coaching</a></li>
+        <li><a href="index.php?page=contact">Contact</a></li>
+    </ul>
+
 </nav>

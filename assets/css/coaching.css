@@ -1,0 +1,81 @@
+.coaching-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.coaches-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.coach-card {
+    background: #1511ffaf;
+
+    width: 400px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.coach-card-tft {
+    background: #ff65e5;
+
+    width: 400px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.coach-card img {
+    width: 100%;
+}
+
+.coach-info {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.coach-info img {
+    width: 100px;
+    align-self: center;
+}
+
+.coach-info h2 {
+    margin-bottom: 10px;
+}
+
+.coach-info h3 {
+    font-size: 26px;
+}
+
+.coach-info p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.book-btn {
+    margin-top: auto;
+    padding: 10px 20px;
+
+    border: none;
+    background: #c89b3c;
+
+    font-weight: bold;
+    width: 250px;
+    align-self: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background: #e6b64d;
+}
