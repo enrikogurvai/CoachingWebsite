@@ -5,39 +5,66 @@
 }
 
 body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
     font-family: sans-serif;
     background-color: #0a0a0f;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     line-height: 1.8;
+    margin-top: 120px; /*Margin-top musí sedieť s navbar height -- Na 100% toto zabudnem*/
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 120px;
 
-    padding: 20px 10%;
     background-color: #111118;
-
     border-bottom: 1px solid #222;
+    
+    z-index: 1000;
+}
+
+.logo-container {
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 35px;    
     font-weight: bold;
-    color: #c89b3c;
+    color: #01b7ab;
+}
+
+.logo-img {
+    height: 130px;
+    width: 130px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    font-weight: bold;
+    margin-right: 3%;
+    gap: 60px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
+    color: #01b7ab;
+    font-size: 25px;
 
     transition: 0.2s;
 }
@@ -70,9 +97,8 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-
     background-color: #111118;
     border-top: 1px solid #222;
 
-    margin-top: 100px
+    margin-top: auto
 }

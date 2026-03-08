@@ -16,7 +16,11 @@
             break;
 
         case 'contact':
-            include "pages/contact.php";
+            include "pages/contact.php"; // Treba odstrániť replace za => Kalendár + Cenník
+            break;
+
+        case 'tierlist':
+            include "pages/tierlist.php";
             break;
 
         default:
