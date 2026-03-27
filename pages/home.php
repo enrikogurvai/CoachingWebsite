@@ -29,7 +29,7 @@
            4. Po session dostaneš odporúčania, čo trénovať.</p>
     </div>
     <div class="strana">
-        <h2>Čo hovoria naši hráči</h2>
+        <h2>Čo hovoria naši uživatelia</h2>
         <p>“Vďaka GOAT Coaching som sa posunul z Gold 3 na Platinum 1 len za 2 mesiace! Ich tipy na positioning a itemizáciu úplne zmenili moju hru.”</p>
     </div>
     <div class="strana">

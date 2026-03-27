@@ -17,7 +17,7 @@
                     <p>VOD reviews | Macro | Micro | Laning Live coaching</p>
                     <p>Cena: Podľa objednávky</p>
                     <br>
-                    <button class ="book-btn">Zajednať termín</button>
+                    <button class ="book-btn" onclick="window.location.href='index.php?page=rezervacie&trener=enrique'">Zajednať termín</button>
                 </div>
         </div>
         <div class = "coach-card-tft">
@@ -28,7 +28,7 @@
                     <img src ="assets/images/diamond_icon.png"></p>
                     <p>Eco | Itemy | Comps | Positioning  Live spectate</p>
                     <p>Cena: 1 Biely monster za hru</p>
-                    <button class ="book-btn">Zajednať termín</button>
+                    <button class ="book-btn" onclick="window.location.href='index.php?page=rezervacie&trener=matus'">Zajednať termín</button>
                 </div>
         </div>
     </div>

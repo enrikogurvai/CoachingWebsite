@@ -23,6 +23,10 @@
             include "pages/tierlist.php";
             break;
 
+        case 'rezervacie':
+            include "pages/rezervacie.php";
+            break;
+
         default:
             include "pages/home.php"; // ak page neexistuje, zobrazíme home
     }
