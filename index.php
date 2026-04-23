@@ -1,38 +1,9 @@
 <?php
-    // index.php
-    // ---------------------------
-    // Získame paramater 'page' z URL | Napr: index.php?page=coaching
-    // Ak nie je nastavený page, použijeme 'home' ako defaultnú page.
+require_once 'database/db.php';
+require_once 'route/router.php';
 
-    $page = $_GET['page'] ?? 'home';
-    // Header načítanie na začiatok stránky.
-    include "includes/header.php";
+$page = $_GET['page'] ?? 'home';
 
-    // Podľa hodnoty $page sa rozhodne, ktorú stránku načítať.
-    switch($page) {
-
-        case 'coaching':
-            include "pages/coaching.php";
-            break;
-
-        case 'contact':
-            include "pages/contact.php"; // Treba odstrániť replace za => Kalendár + Cenník
-            break;
-
-        case 'tierlist':
-            include "pages/tierlist.php";
-            break;
-
-        case 'rezervacie':
-            include "pages/rezervacie.php";
-            break;
-
-        default:
-            include "pages/home.php"; // ak page neexistuje, zobrazíme home
-    }
-
-    // Footer načítanie na konci stránky.
-    include "includes/footer.php";
+$router = new Router();
+$router->renderPage($page);
 ?>
-
-

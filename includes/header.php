@@ -17,7 +17,7 @@
         <li><a href="index.php?page=home">Domov</a></li>
         <li><a href="index.php?page=coaching">Trenéri</a></li>
         <li><a href="index.php?page=rezervacie">Formulár</a></li>
-        <li><a href="index.php?page=contact">Kontakt</a></li>
+        <li><a href="index.php?page=tierlist">Tierlist</a></li>
 
     </ul>
 
