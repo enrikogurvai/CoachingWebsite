@@ -2,7 +2,7 @@
 class Router {
     public function renderPage($page) {
         include "includes/header.php";
-        $allowed_pages = ['home', 'coaching', 'tierlist', 'rezervacie'];
+        $allowed_pages = ['home', 'coaching', 'tierlist', 'rezervacie', 'login', 'registracia', 'admin_treneri', 'logout','trener_dashboard'];
         
         if (in_array($page, $allowed_pages)) {
             $file = "pages/" . $page . ".php";

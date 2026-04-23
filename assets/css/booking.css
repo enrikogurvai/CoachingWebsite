@@ -46,3 +46,17 @@
     border-color: #01b7ab;
     box-shadow: 0 0 8px rgba(1, 183, 171, 0.5);
 }
+
+.book-btn {
+    margin-top: auto;
+    padding: 10px 20px;
+
+    border: none;
+    background: #ffbe33;
+
+    font-weight: bold;
+    width: 66%;
+    align-self: center;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -94,6 +94,12 @@ body {
     background-color: #e6b64d;
 }
 
+.user-points {
+    text-decoration: none;
+    color: #01b7ab;
+    font-size: 25px;
+}
+
 footer {
     text-align: center;
     padding: 20px;

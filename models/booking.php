@@ -17,24 +17,29 @@ class Booking {
     }
 
     public function create($data) {
-        $meno = htmlspecialchars(trim($data['meno']));
-        $email = htmlspecialchars(trim($data['email']));
-        $discord = htmlspecialchars(trim($data['discord']));
-        $trener = htmlspecialchars(trim($data['trener']));
-        $sprava = htmlspecialchars(trim($data['sprava']));
+    $pouzivatel_id = $_SESSION['pouzivatel_id'] ?? null;
+    
+    $meno_hosta = !$pouzivatel_id ? htmlspecialchars(trim($data['meno'])) : null;
+    
+    $email = htmlspecialchars(trim($data['email']));
+    $discord = htmlspecialchars(trim($data['discord']));
+    $trener_id = intval($data['trener_id']); 
+    $sprava = htmlspecialchars(trim($data['sprava']));
 
         try {
-            $sql = "INSERT INTO rezervacie (meno, email, discord, trener, sprava) VALUES (:meno, :email, :discord, :trener, :sprava)";
+            $sql = "INSERT INTO rezervacie (pouzivatel_id, trener_id, meno_hosta, email, discord, sprava, status) 
+                    VALUES (:p_id, :t_id, :m_host, :email, :discord, :sprava, 'nova')";
+            
             $stmt = $this->db->prepare($sql);
             $stmt->execute([
-                ':meno' => $meno,
+                ':p_id' => $pouzivatel_id,
+                ':t_id' => $trener_id,
+                ':m_host' => $meno_hosta,
                 ':email' => $email,
                 ':discord' => $discord,
-                ':trener' => $trener,
                 ':sprava' => $sprava
             ]);
 
-            //$this->sendEmails($meno, $email, $discord, $trener, $sprava);
             return true;
         } catch (PDOException $e) {
             return $e->getMessage();
