@@ -15,6 +15,15 @@
     text-transform: uppercase;
 }
 
+.admin-section h2 {
+    text-align: center;
+    color: #01b7ab;
+    font-size: 32x;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
 
 .admin-form-container {
     background: #1a1a1a;
@@ -46,7 +55,6 @@
     font-size: 18px;
 }
 
-/* Štýly pre vstupné polia */
 .admin-form-container input,
 .admin-form-container select, 
 .admin-form-container textarea {
@@ -93,7 +101,7 @@
 }
 
 table {
-    width: auto;
+    width: 500px;
     border-collapse: separate;
     border-spacing: 0 10px;
     margin-top: 20px;
