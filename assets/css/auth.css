@@ -65,3 +65,65 @@
     background: #e6b64d;
     transform: scale(1.02);
 }
+
+.alert {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    animation: fadeInAlert 0.4s ease-in-out;
+}
+
+.alert-danger {
+    background-color: rgba(255, 74, 74, 0.12);
+    border: 1px solid #ff4a4a;
+    color: #ff4a4a;
+    box-shadow: 0 0 20px rgba(255, 74, 74, 0.25);
+}
+
+.alert-success {
+    background-color: rgba(1, 183, 171, 0.12);
+    border: 1px solid #01b7ab;
+    color: #01b7ab;
+    box-shadow: 0 0 20px rgba(1, 183, 171, 0.25);
+}
+
+.forgot-password-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-link {
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.forgot-link:hover {
+    color: #01b7ab;
+    text-shadow: 0 0 10px rgba(1, 183, 171, 0.4);
+}
+
+.alert a {
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+.alert a:hover {
+    color: #c89b3c !important;
+}
+
+@keyframes fadeInAlert {
+    from { 
+        opacity: 0; 
+        transform: translateY(-15px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}

@@ -4,7 +4,7 @@
 $database = new Database();
 $db = $database->getConnection();
 
-$stmt = $db->query("SELECT id, meno, hra FROM treneri");
+$stmt = $db->query("SELECT id, meno, hra, slug FROM treneri");
 $vsetci_treneri = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $kliknuty_id = $_GET['trener_id'] ?? ''; 
@@ -28,7 +28,7 @@ $kliknuty_id = $_GET['trener_id'] ?? '';
         <select id="trener" name="trener_id" required>
             <option value="">-- Vyber si trénera --</option>
             <?php foreach ($vsetci_treneri as $t): ?>
-                <option value="<?= $t['id'] ?>" <?= $kliknuty_id == $t['id'] ? 'selected' : '' ?>>
+                <option value="<?= $t['id'] ?>" data-slug="<?= htmlspecialchars($t['slug'] ?? '') ?>">
                     [<?= $t['hra'] ?>] <?= htmlspecialchars($t['meno']) ?>
                 </option>
             <?php endforeach; ?>
@@ -40,3 +40,4 @@ $kliknuty_id = $_GET['trener_id'] ?? '';
         <button type="submit" class="book-btn" style="width: 100%;">Odoslať žiadosť</button>
     </form>
 </section>
+<script src="assets/js/booking.js"></script>

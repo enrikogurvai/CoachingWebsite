@@ -21,7 +21,7 @@ $vsetci_treneri = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <p><?= htmlspecialchars($t['popis']) ?></p>
                     <p>Cena: <?= htmlspecialchars($t['cena_info']) ?></p>
                     <br>
-                    <button class="book-btn" onclick="window.location.href='index.php?page=rezervacie&trener=<?= $t['slug'] ?>'">
+                    <button class="book-btn coach-redirect-btn" data-slug="<?= htmlspecialchars($t['slug']) ?>">
                         Zajednať termín
                     </button>
                 </div>
@@ -29,3 +29,5 @@ $vsetci_treneri = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endforeach; ?>
     </div>
 </section>
+
+<script src="assets/js/coaching.js"></script>

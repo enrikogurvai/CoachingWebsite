@@ -134,7 +134,7 @@ $treneri = $db->query("SELECT * FROM treneri")->fetchAll(PDO::FETCH_ASSOC);
                 <td><?= $t['hra'] ?></td>
                 <td>
                     <a href="index.php?page=admin_treneri&edit_id=<?= $t['id'] ?>" class="edit-link">Upraviť</a>
-                    <a href="index.php?page=admin_treneri&delete_id=<?= $t['id'] ?>" class="delete-link" onclick="return confirm('Naozaj zmazať?')">Odstrániť</a>
+                    <a href="index.php?page=admin_treneri&delete_id=<?= $t['id'] ?>" class="edit-link confirm-delete">Odstrániť</a>
                 </td>
             </tr>
             <?php endforeach; ?>
