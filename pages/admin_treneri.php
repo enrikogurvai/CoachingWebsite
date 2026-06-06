@@ -141,3 +141,5 @@ $treneri = $db->query("SELECT * FROM treneri")->fetchAll(PDO::FETCH_ASSOC);
         </tbody>
     </table>
 </section>
+
+<script src="assets/js/admin.js"></script>
